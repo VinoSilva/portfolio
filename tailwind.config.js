@@ -6,6 +6,9 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
       },
+      colors: {
+        primary: "#6e06f2",
+      },
     },
   },
   plugins: [],
