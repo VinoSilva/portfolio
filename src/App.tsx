@@ -20,7 +20,7 @@ function App() {
       <Navbar />
       {/* Routes */}
 
-      <div className="mt-20 max-w-7xl mx-auto p-6">
+      <div className="mt-20 max-w-7xl mx-auto p-4 sm:p-6">
         <Routes>
           <Route path={routes.home} element={<Home />} />
           <Route path={routes.about} element={<About />} />

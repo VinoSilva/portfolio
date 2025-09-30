@@ -12,7 +12,7 @@ const HeroContact = () => {
         </div>
         <div className="font-montserrat mt-4 text-3xl text-gray-700">
           Looking to partner or work together? Reach out through the form and
-          I'll get back to you in the next 48 hours.
+          I'll get back to you within the next 48 hours.
         </div>
         <div className="mt-4 flex flex-col gap-4">
           <div className="flex gap-4 items-center">
@@ -27,6 +27,7 @@ const HeroContact = () => {
         <img
           src="/images/profile.webp"
           className="rounded-full w-full h-auto"
+          alt="Profile Picture"
         />
       </div>
     </div>

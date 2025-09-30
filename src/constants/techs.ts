@@ -1,0 +1,18 @@
+export const techs = {
+  TYPESCRIPT: "Typescript",
+  JAVASCRIPT: "Javascript",
+  REACT: "React",
+  VITE: "Vite",
+  CI_CD: "CI/CD",
+  REDUX: "Redux",
+  POSTGRESQL: "Postgresql",
+  ASP_NET: "ASP.Net",
+  NODE_JS: "Node.js",
+  AZURE_DEVOPS: "Azure Devops",
+  DOCKER: "Docker",
+  NETLIFY: "Netlify",
+  FAUNADB: "Fauna DB",
+  UNITY: "Unity",
+  C_SHARP: "C#",
+  UE4: "UE4",
+};

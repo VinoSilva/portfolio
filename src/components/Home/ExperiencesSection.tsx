@@ -72,13 +72,15 @@ const ExperiencesSection = () => {
             title: exp.company,
             content: (
               <div>
-                <h4 className="font-semibold text-xl">
+                <h4 className="font-semibold text-base md:text-xl">
                   {exp.position} @{" "}
                   <span className="text-primary">{exp.company}</span>
                 </h4>
-                <h5 className=" text-gray-600 text-sm">{exp.timeline}</h5>
+                <h5 className=" text-gray-600 text-xs md:text-sm">
+                  {exp.timeline}
+                </h5>
 
-                <div className="text-gray-700 font-montserrat mt-4">
+                <div className="text-gray-700 text-xs md:text-base font-montserrat mt-4">
                   {exp.description}
                 </div>
               </div>

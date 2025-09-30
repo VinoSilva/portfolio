@@ -32,7 +32,7 @@ const skills: { name: string; techs: { name: string; img_src: string }[] }[] = [
         img_src: "/images/techs/BackEnd/tech-asp-net.webp",
       },
       {
-        name: "Postgresql",
+        name: "Node JS",
         img_src: "/images/techs/BackEnd/tech-node-js.webp",
       },
     ],
@@ -41,7 +41,7 @@ const skills: { name: string; techs: { name: string; img_src: string }[] }[] = [
     name: "Devops",
     techs: [
       {
-        name: "Postgresql",
+        name: "Azure Devops",
         img_src: "/images/techs/DevOps/tech-azure-devops.webp",
       },
       {
@@ -67,8 +67,12 @@ const SkillsSection = () => {
                 <div className="flex flex-col gap-4 mt-5">
                   {techs.map(({ img_src, name }) => {
                     return (
-                      <div className="flex items-center gap-4">
-                        <img src={img_src} className="w-10 h-10 rounded-full" />
+                      <div key={name} className="flex items-center gap-4">
+                        <img
+                          src={img_src}
+                          className="w-10 h-10 rounded-full"
+                          alt={`tech-${name}`}
+                        />
                         <p className="font-semibold font-montserrat">{name}</p>
                       </div>
                     );

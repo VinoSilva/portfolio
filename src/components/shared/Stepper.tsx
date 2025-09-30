@@ -8,14 +8,19 @@ interface SelectorProps {
 
 const Selector = ({ isSelected, onClick, title }: SelectorProps) => {
   return (
-    <div className="flex gap-8 items-center cursor-pointer" onClick={onClick}>
+    <div
+      className="flex gap-2 md:gap-8 items-center cursor-pointer"
+      onClick={onClick}
+    >
       <div
         className={`${
           isSelected ? "bg-primary" : "bg-gray-700 hover:bg-gray-500"
-        } min-w-1 min-h-12 cursor-pointer`}
+        } min-w-1 min-h-12 cursor-pointer h-full`}
       />
       <h4
-        className={`${isSelected ? "text-primary" : ""} font-semibold text-lg`}
+        className={`${
+          isSelected ? "text-primary" : ""
+        } font-semibold text-base md:text-lg`}
       >
         {title}
       </h4>
@@ -36,6 +41,7 @@ const Stepper = ({ steps }: StepperProps) => {
         {steps.map(({ title }, index) => {
           return (
             <Selector
+              key={index}
               isSelected={index === selectedStepIndex}
               onClick={() => {
                 setSelectedStepIndex(index);
