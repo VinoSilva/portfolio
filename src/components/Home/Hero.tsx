@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 
 // Import componenents
-import { Button } from "@components/shared/Button";
+import Button from "@components/shared/Button";
 
 // Import constants
 import routes from "@constants/route";

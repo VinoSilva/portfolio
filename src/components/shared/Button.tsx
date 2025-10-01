@@ -25,6 +25,8 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   size?: "sm" | "md" | "lg";
 };
 
-export function Button({ variant, size, ...props }: ButtonProps) {
+const Button = ({ variant, size, ...props }: ButtonProps) => {
   return <button className={button({ variant, size })} {...props} />;
-}
+};
+
+export default Button;
