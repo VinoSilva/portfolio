@@ -57,7 +57,7 @@ const AutocompleteInput: React.FC<AutocompleteInputProps> = ({
   };
 
   return (
-    <div className="relative w-64">
+    <div className="relative w-full">
       {query ? (
         <div className="absolute right-2 top-1/2 -translate-y-1/2">
           <IconButton
@@ -84,8 +84,8 @@ const AutocompleteInput: React.FC<AutocompleteInputProps> = ({
           {filtered.map((item, index) => (
             <li
               key={item}
-              className={`px-3 py-2 cursor-pointer hover:bg-blue-100 ${
-                index === activeIndex ? "bg-blue-100" : ""
+              className={`px-3 py-2 cursor-pointer hover:bg-primary-light ${
+                index === activeIndex ? "bg-primary-light" : ""
               }`}
               onClick={() => handleSelect(item)}
             >

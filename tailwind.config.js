@@ -8,6 +8,7 @@ export default {
       },
       colors: {
         primary: "#6e06f2",
+        "primary-light": "#F1E6FE",
       },
       boxShadow: (theme) => ({
         // small shadow
