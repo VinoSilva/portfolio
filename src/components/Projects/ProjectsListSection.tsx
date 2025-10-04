@@ -1,6 +1,6 @@
 // Import libraries
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import { useState } from "react";
+import { useState, type JSX } from "react";
 
 // Import data
 import PORTFOLIOS from "@data/portfolios";
@@ -39,6 +39,7 @@ interface ProjectCardProps {
   company: string;
   techs: string[];
   showDivider: boolean;
+  source?: string;
 }
 
 const ProjectCard = ({
@@ -52,7 +53,48 @@ const ProjectCard = ({
   company,
   techs,
   showDivider,
+  source,
 }: ProjectCardProps) => {
+  const renderLinks = () => {
+    const arr: JSX.Element[] = [];
+
+    if (link) {
+      arr.push(
+        <a target="_blank" rel="noopener noreferrer" href={link}>
+          <Button variant="secondary" size="sm">
+            View Project <FaArrowUpRightFromSquare />
+          </Button>
+        </a>
+      );
+    }
+
+    if (source) {
+      arr.push(
+        <a target="_blank" rel="noopener noferrer" href={source}>
+          <Button variant="secondary" size="sm">
+            View Source Code
+            <FaArrowUpRightFromSquare />
+          </Button>
+        </a>
+      );
+    }
+
+    return (
+      <>
+        <div className="mt-4 flex gap-4">{arr}</div>
+        {!link ? (
+          <div className="mt-2">
+            <span className="text-red-500 font-semibold text-xs md:text-sm ">
+              This is a private dashboard, so no public link is available.
+            </span>
+          </div>
+        ) : (
+          <></>
+        )}
+      </>
+    );
+  };
+
   return (
     <div className="flex flex-col gap-10 md:gap-20 px-4 md:p-0">
       <div className="flex flex-col justify-center items-center md:flex-row gap-5 md:gap-20">
@@ -76,20 +118,7 @@ const ProjectCard = ({
             {result}
           </p>
 
-          {/* Link / fallback */}
-          {link ? (
-            <div className="mt-4">
-              <a target="_blank" rel="noopener noreferrer" href={link}>
-                <Button variant="secondary" size="sm">
-                  View Project <FaArrowUpRightFromSquare />
-                </Button>
-              </a>
-            </div>
-          ) : (
-            <span className="text-red-500 font-semibold text-xs md:text-sm">
-              This is a private dashboard, so no public link is available.
-            </span>
-          )}
+          {renderLinks()}
         </div>
 
         {/* Thumbnail */}

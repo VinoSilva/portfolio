@@ -14,6 +14,8 @@ type PortFolioType = {
   result: string;
   note: string | undefined;
   techs: string[];
+  source?: string;
+  backend?: boolean;
 };
 
 export const PROFESSIONAL = "Professional";
@@ -95,6 +97,21 @@ const PORTFOLIOS: PortFolioType[] = [
       techs.JAVASCRIPT,
     ],
     year: "2025 - Present",
+  },
+  {
+    thumbnail: "/images/portfolios/people-crud-asp/people-crud-asp.webp",
+    name: "People CRUD API",
+    description: "A simple CRUD api for people in a company.",
+    images: [],
+    categories: [WEB_PROJECTS],
+    company: "",
+    id: "15",
+    link: "",
+    note: "",
+    result: "",
+    techs: [techs.CI_CD, techs.GITHUB_ACTIONS, techs.C_SHARP, techs.ASP_NET],
+    year: "2025 - Present",
+    source: "https://github.com/VinoSilva/asp-net-people-crud",
   },
   {
     name: "KodeCrew",
@@ -204,6 +221,7 @@ const PORTFOLIOS: PortFolioType[] = [
       techs.NETLIFY,
       techs.FAUNADB,
       techs.JAVASCRIPT,
+      techs.NODE_JS,
     ],
   },
   {
@@ -264,7 +282,78 @@ const PORTFOLIOS: PortFolioType[] = [
       techs.CI_CD,
       techs.NETLIFY,
     ],
+    source: "https://gitlab.com/vinoshensilva/invoice-generator",
   },
+  {
+    id: "17",
+    company: "",
+    year: "2025",
+    name: "React Markdown App",
+    description: "A markdown app built with React",
+    thumbnail: "/images/portfolios/markdown-app/react-markdown-app.webp",
+    images: ["/images/portfolios/markdown-app/react-markdown-app.webp"],
+    categories: [WEB_PROJECTS],
+    link: "https://vino-markdown.netlify.app/",
+    note: "",
+    result: "",
+    techs: [
+      techs.REACT,
+      techs.REDUX,
+      techs.TYPESCRIPT,
+      techs.VITE,
+      techs.CI_CD,
+      techs.NETLIFY,
+    ],
+    source: "https://github.com/VinoSilva/react-markdown-app",
+  },
+  {
+    id: "18",
+    company: "",
+    year: "2025",
+    name: "React Blog App",
+    description: "A markdown app built with React",
+    thumbnail: "/images/portfolios/react-blog-app/react-blog-app.webp",
+    images: ["/images/portfolios/react-blog-app/react-blog-app.webp"],
+    categories: [WEB_PROJECTS],
+    link: "https://vino-blog.netlify.app/",
+    note: "",
+    result: "",
+    techs: [
+      techs.REACT,
+      techs.REDUX,
+      techs.TYPESCRIPT,
+      techs.VITE,
+      techs.CI_CD,
+      techs.NETLIFY,
+    ],
+    source: "https://github.com/VinoSilva/react-blog-app",
+  },
+  // {
+  //   id: "16",
+  //   company: "",
+  //   year: "2025",
+  //   name: "React Markdown App",
+  //   description: "A simple markdown app",
+  //   thumbnail:
+  //     "/images/portfolios/invoice-generator/portfolio-invoice-generator-2.webp",
+  //   images: [
+  //     "/images/portfolios/invoice-generator/portfolio-invoice-generator-2.webp",
+  //   ],
+  //   categories: [WEB_PROJECTS],
+  //   link: "https://generate-invoice.netlify.app",
+  //   note: "",
+  //   result:
+  //     "The invoice site enabling users to add items, discount,shipping, tax calculation and their own information",
+  //   techs: [
+  //     techs.REACT,
+  //     techs.REDUX,
+  //     techs.TYPESCRIPT,
+  //     techs.VITE,
+  //     techs.CI_CD,
+  //     techs.NETLIFY,
+  //   ],
+  //   source: "https://gitlab.com/vinoshensilva/invoice-generator",
+  // },
   {
     id: "14",
     company: "",
@@ -285,6 +374,7 @@ const PORTFOLIOS: PortFolioType[] = [
       techs.CI_CD,
       techs.NETLIFY,
     ],
+    source: "https://github.com/VinoSilva/react-online-notepad",
   },
   // {
   //   id: "4",

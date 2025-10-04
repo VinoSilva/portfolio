@@ -15,4 +15,5 @@ export const techs = {
   UNITY: "Unity",
   C_SHARP: "C#",
   UE4: "UE4",
+  GITHUB_ACTIONS: "Github Actions",
 };
