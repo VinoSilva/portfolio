@@ -311,7 +311,7 @@ const PORTFOLIOS: PortFolioType[] = [
     company: "",
     year: "2025",
     name: "React Blog App",
-    description: "A markdown app built with React",
+    description: "A simple blog app",
     thumbnail: "/images/portfolios/react-blog-app/react-blog-app.webp",
     images: ["/images/portfolios/react-blog-app/react-blog-app.webp"],
     categories: [WEB_PROJECTS],
