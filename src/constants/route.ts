@@ -3,6 +3,7 @@ const routes = {
   about: "/about",
   projects: "/projects",
   contact: "/contact",
+  favourite_books: "/favourite-books",
 };
 
 export default routes;

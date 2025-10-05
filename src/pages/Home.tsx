@@ -1,4 +1,5 @@
 // Import components
+import CertificatesSection from "@components/Home/CertificatesSection";
 import ExperiencesSection from "@components/Home/ExperiencesSection";
 import Hero from "@components/Home/Hero";
 import ProjectsSection from "@components/Home/ProjectsSection";
@@ -15,6 +16,8 @@ const Home = () => {
       <ExperiencesSection />
       <div className="mt-40" />
       <SkillsSection />
+      <div className="mt-40" />
+      <CertificatesSection />
       <div className="mt-40" />
       <StorySection />
     </div>

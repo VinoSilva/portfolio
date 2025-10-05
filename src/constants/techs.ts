@@ -8,6 +8,7 @@ export const techs = {
   POSTGRESQL: "Postgresql",
   ASP_NET: "ASP.Net",
   NODE_JS: "Node.js",
+  EXPRESS: "Express.js",
   AZURE_DEVOPS: "Azure Devops",
   DOCKER: "Docker",
   NETLIFY: "Netlify",

@@ -40,6 +40,7 @@ interface ProjectCardProps {
   techs: string[];
   showDivider: boolean;
   source?: string;
+  backend?: boolean;
 }
 
 const ProjectCard = ({
@@ -54,6 +55,7 @@ const ProjectCard = ({
   techs,
   showDivider,
   source,
+  backend,
 }: ProjectCardProps) => {
   const renderLinks = () => {
     const arr: JSX.Element[] = [];
@@ -82,10 +84,20 @@ const ProjectCard = ({
     return (
       <>
         <div className="mt-4 flex gap-4">{arr}</div>
-        {!link ? (
+        {!link && !backend ? (
           <div className="mt-2">
             <span className="text-red-500 font-semibold text-xs md:text-sm ">
               This is a private dashboard, so no public link is available.
+            </span>
+          </div>
+        ) : (
+          <></>
+        )}
+        {!link && backend ? (
+          <div className="mt-2">
+            <span className="text-red-500 font-semibold text-xs md:text-sm ">
+              This is a backend only project, so no public link or image is
+              available.
             </span>
           </div>
         ) : (
@@ -157,8 +169,14 @@ const ProjectsListSection = () => {
   return (
     <div>
       {/* Search */}
-      <div className="flex justify-center mb-20 max-w-md mx-auto">
+      <div className="flex justify-center mb-10 max-w-md mx-auto">
         <SearchBar onSearch={handleSearch} />
+      </div>
+
+      <div className="mb-10 font-semibold text-3xl text-center">
+        <span className=" text-primary">{PORTFOLIOS.length}</span>
+        {"  "}
+        Projects.
       </div>
 
       {/* Project list */}

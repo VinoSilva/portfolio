@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div>
       <ProjectsHeroSetion />
-      <div className="mt-10 md:mt-40">
+      <div className="mt-10 md:mt-20">
         <ProjectsListSection />
       </div>
     </div>

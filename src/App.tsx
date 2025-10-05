@@ -13,6 +13,7 @@ import Contact from "@pages/Contact";
 import Navbar from "@components/shared/Navbar";
 import routes from "@constants/route";
 import Footer from "@components/shared/Footer";
+import FavouriteBooks from "@pages/FavouriteBooks";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path={routes.about} element={<About />} />
           <Route path={routes.projects} element={<Projects />} />
           <Route path={routes.contact} element={<Contact />} />
+          <Route path={routes.favourite_books} element={<FavouriteBooks />} />
         </Routes>
         <div className="mt-40" />
         <Footer />
