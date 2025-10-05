@@ -24,9 +24,9 @@ const Navbar = () => {
         <NavLink to={routes.projects} className={classNameFunc}>
           Projects
         </NavLink>
-        {/* <NavLink to={routes.favourite_books} className={classNameFunc}>
+        <NavLink to={routes.favourite_books} className={classNameFunc}>
           Favourite Books
-        </NavLink> */}
+        </NavLink>
       </div>
       <div>
         <NavLink to={routes.contact} className={classNameFunc}>
