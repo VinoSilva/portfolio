@@ -169,15 +169,15 @@ const ProjectsListSection = () => {
   return (
     <div>
       {/* Search */}
-      <div className="flex justify-center mb-10 max-w-md mx-auto">
+      <div className="flex justify-center mb-20 max-w-md mx-auto">
         <SearchBar onSearch={handleSearch} />
       </div>
 
-      <div className="mb-10 font-semibold text-3xl text-center">
+      {/* <div className="mb-10 font-semibold text-3xl text-center">
         <span className=" text-primary">{PORTFOLIOS.length}</span>
         {"  "}
         Projects.
-      </div>
+      </div> */}
 
       {/* Project list */}
       <div className="flex flex-col gap-10 md:gap-20">
