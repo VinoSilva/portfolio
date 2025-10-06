@@ -62,7 +62,7 @@ const SkillsSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6">
           {skills.map(({ name, techs }) => {
             return (
-              <div>
+              <div key={name}>
                 <h4 className="text-3xl font-bold font-poppins">{name}</h4>
                 <div className="flex flex-col gap-4 mt-5">
                   {techs.map(({ img_src, name }) => {

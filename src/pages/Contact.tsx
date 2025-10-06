@@ -3,7 +3,7 @@ import HeroContact from "@components/Contact/HeroContact";
 const Contact = () => {
   return (
     <div>
-      <div className="h-[80vh] flex items-center">
+      <div className="h-[50vh] md:h-[80vh] flex items-center">
         <HeroContact />
       </div>
     </div>

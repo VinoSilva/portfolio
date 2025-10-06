@@ -13,7 +13,7 @@ const Footer = () => {
 
   return (
     <div>
-      <div className="flex justify-between">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-5 mb-5 md:gap-0 md:mb-0">
         <div className="flex gap-4">
           <NavLink to={routes.home} className={classNameFunc}>
             Home
