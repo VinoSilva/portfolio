@@ -25,10 +25,10 @@ const certificates: Record<string, TCertificate[]> = {
       icon: "/images/certifications/azure/AZ-400.webp",
     },
     {
-      name: "AZ-900",
+      name: "AZ-305",
       description:
         "Designed and architected secure, high-performance, and cost-efficient cloud solutions aligned with Azure best practices.",
-      icon: "/images/certifications/azure/AZ-900.webp",
+      icon: "/images/certifications/azure/AZ-305.webp",
     },
   ],
 };
