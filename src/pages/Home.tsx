@@ -8,17 +8,12 @@ import StorySection from "@components/Home/StorySection";
 
 const Home = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-32">
       <Hero />
-      <div className="mt-40" />
       <ProjectsSection />
-      <div className="mt-40" />
       <ExperiencesSection />
-      <div className="mt-40" />
       <SkillsSection />
-      {/* <div className="mt-40" />
-      <CertificatesSection /> */}
-      <div className="mt-40" />
+      {/* <CertificatesSection /> */}
       <StorySection />
     </div>
   );

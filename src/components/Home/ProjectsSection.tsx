@@ -6,12 +6,6 @@ import ProjectCard from "./ProjectCard";
 
 const portfolios: ProjectCardProps[] = [
   {
-    imgSrc: "/images/portfolios/mydcf-2021/Portfolio-Segments.webp",
-    name: "My DCF",
-    description:
-      "Developed a custom dashboard and backend system to power the Malaysia Digital Content Festival (MYDCF), enabling seamless data management and real-time insights.",
-  },
-  {
     imgSrc: "/images/portfolios/kodecrew/main-dashboard-page.webp",
     name: "KodeCrew",
     description:
@@ -22,6 +16,12 @@ const portfolios: ProjectCardProps[] = [
     name: "Drivalia",
     description:
       "Built a vehicle management platform for Drivalia, enabling streamlined handling of quotations, fleet equipment, and overall vehicle operations.",
+  },
+  {
+    imgSrc: "/images/portfolios/kodecure/kodecure.webp",
+    name: "KodeCure",
+    description:
+      "Developed the Kodecure platform, implementing a responsive frontend and integrating APIs to deliver personalized supplement recommendations for improved health and longevity.",
   },
   {
     imgSrc: "/images/portfolios/aarsleff/Aarsleff.webp",

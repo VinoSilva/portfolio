@@ -10,7 +10,7 @@ const ProjectCard = ({ description, imgSrc, name }: ProjectCardProps) => {
       <div className="aspect-[4/3] sm:aspect-[16/9] lg:aspect-[3/2]">
         <img
           src={imgSrc}
-          className="w-full h-full object-cover rounded-lg"
+          className="w-full h-full object-cover rounded-lg shadow-primary"
           alt={name}
         />
       </div>

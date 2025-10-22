@@ -54,13 +54,14 @@ const Hero = () => {
         <p className="text-xl">Hey I'm Vinoshen Silva</p>
         <div className="text-4xl md:text-7xl font-extrabold">
           <h2>
-            <span className="text-primary">Front</span>end
+            <span className="text-primary">Full</span>Stack
           </h2>
           <h2>Developer</h2>
         </div>
         <div className="font-montserrat mt-4">
-          I’m a frontend developer specializing in custom dashboards — building
-          fast, clean, and scalable interfaces your users will trust.
+          I’m a full stack developer specializing in building robust, scalable
+          applications — crafting seamless user experiences backed by efficient,
+          secure, and reliable server logic.
         </div>
         <div className="mt-4 flex gap-4 flex-wrap">
           <Link to={routes.contact}>

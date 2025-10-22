@@ -17,4 +17,10 @@ export const techs = {
   C_SHARP: "C#",
   UE4: "UE4",
   GITHUB_ACTIONS: "Github Actions",
+  GO: "Golang",
+  REDIS: "Redis",
+  MONGODB: "MongoDB",
+  KUBERNETES: "Kubernetes",
+  JENKINS: "Jenkins",
+  BASH_SCRIPT: "Bash Script",
 };
