@@ -21,7 +21,7 @@ const CertificatesSection = () => {
               return (
                 <div
                   key={name}
-                  className="flex  flex-col w-72 shadow-primary-xl items-center gap-4 p-4 rounded-xl"
+                  className="flex  flex-col w-72 shadow-primary-xl border-t-primary border-t-[1px] items-center gap-4 p-4 rounded-xl"
                 >
                   <img
                     src={icon}

@@ -7,7 +7,7 @@ const FavouriteBooks = () => {
         <div className="flex flex-col md:flex-row gap-5" key={name}>
           <img
             src={thumbnail}
-            className="h-auto w-1/2 mx-auto md:w-auto md:h-64 shadow-primary-lg"
+            className="h-auto w-1/2 mx-auto md:w-auto md:h-64 shadow-primary-lg border-t-primary border-t-[1px]"
             alt={name}
           />
           <div>

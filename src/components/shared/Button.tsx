@@ -1,3 +1,4 @@
+import { twMerge } from "tailwind-merge";
 import { tv } from "tailwind-variants";
 
 const button = tv({
@@ -25,8 +26,13 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   size?: "sm" | "md" | "lg";
 };
 
-const Button = ({ variant, size, ...props }: ButtonProps) => {
-  return <button className={button({ variant, size })} {...props} />;
+const Button = ({ variant, className, size, ...props }: ButtonProps) => {
+  return (
+    <button
+      className={twMerge([button({ variant, size }), className])}
+      {...props}
+    />
+  );
 };
 
 export default Button;

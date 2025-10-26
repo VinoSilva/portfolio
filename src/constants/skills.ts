@@ -21,6 +21,10 @@ export const skills: {
         name: "Redux",
         img_src: "/images/techs/FrontEnd/tech-redux.webp",
       },
+      {
+        name: "Vite",
+        img_src: "/images/techs/FrontEnd/tech-vite.webp",
+      },
     ],
   },
   {
@@ -39,6 +43,14 @@ export const skills: {
         img_src: "/images/techs/BackEnd/tech-node-js.webp",
       },
       // {
+      //   name: "Nest JS",
+      //   img_src: "/images/techs/BackEnd/tech-nest-js.webp",
+      // },
+      // {
+      //   name: "GraphQL",
+      //   img_src: "/images/techs/BackEnd/tech-graphql.webp",
+      // },
+      // {
       //   name: "Golang",
       //   img_src: "/images/techs/BackEnd/tech-golang.webp",
       // },
@@ -52,6 +64,19 @@ export const skills: {
       // },
     ],
   },
+  // {
+  //   name: "Mobile",
+  //   techs: [
+  //     {
+  //       name: "React Native",
+  //       img_src: "/images/techs/Mobile/tech-react-native.webp",
+  //     },
+  //     {
+  //       name: "Expo",
+  //       img_src: "/images/techs/Mobile/tech-expo.webp",
+  //     },
+  //   ],
+  // },
   {
     name: "Devops",
     techs: [
@@ -67,14 +92,14 @@ export const skills: {
         name: "Docker",
         img_src: "/images/techs/DevOps/tech-docker.webp",
       },
-      //   {
-      //     name: "Jenkins",
-      //     img_src: "/images/techs/DevOps/tech-jenkins.webp",
-      //   },
-      //   {
-      //     name: "Bash Script",
-      //     img_src: "/images/techs/DevOps/tech-bash.webp",
-      //   },
+      // {
+      //   name: "Jenkins",
+      //   img_src: "/images/techs/DevOps/tech-jenkins.webp",
+      // },
+      // {
+      //   name: "Bash Script",
+      //   img_src: "/images/techs/DevOps/tech-bash.webp",
+      // },
     ],
   },
 ];

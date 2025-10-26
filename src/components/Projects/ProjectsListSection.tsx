@@ -1,18 +1,17 @@
 // Import libraries
-import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import { useState, type JSX } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 // Import data
 import PORTFOLIOS from "@data/portfolios";
 
 // Import constants
 import { techs } from "@constants/techs";
+import routes from "@constants/route";
 
 // Components
-import ProjectDivider from "./ProjectDivider";
-import Tag from "@components/shared/Tag";
-import Button from "@components/shared/Button";
 import AutocompleteInput from "@components/shared/AutocompleteInput";
+import ProjectsCardProject from "./ProjectsCardProject";
 
 // 🔹 SearchBar Component
 const SearchBar = ({ onSearch }: { onSearch: (val: string) => void }) => {
@@ -27,130 +26,10 @@ const SearchBar = ({ onSearch }: { onSearch: (val: string) => void }) => {
   );
 };
 
-// 🔹 ProjectCard Component
-interface ProjectCardProps {
-  name: string;
-  thumbnail: string;
-  description: string;
-  link?: string;
-  result: string;
-  categories: string[];
-  year: string;
-  company: string;
-  techs: string[];
-  showDivider: boolean;
-  source?: string;
-  backend?: boolean;
-}
-
-const ProjectCard = ({
-  name,
-  thumbnail,
-  description,
-  link,
-  result,
-  categories,
-  year,
-  company,
-  techs,
-  showDivider,
-  source,
-  backend,
-}: ProjectCardProps) => {
-  const renderLinks = () => {
-    const arr: JSX.Element[] = [];
-
-    if (link) {
-      arr.push(
-        <a target="_blank" rel="noopener noreferrer" href={link}>
-          <Button variant="secondary" size="sm">
-            View Project <FaArrowUpRightFromSquare />
-          </Button>
-        </a>
-      );
-    }
-
-    if (source) {
-      arr.push(
-        <a target="_blank" rel="noopener noferrer" href={source}>
-          <Button variant="secondary" size="sm">
-            View Source Code
-            <FaArrowUpRightFromSquare />
-          </Button>
-        </a>
-      );
-    }
-
-    return (
-      <>
-        <div className="mt-4 flex gap-4">{arr}</div>
-        {!link && !backend ? (
-          <div className="mt-2">
-            <span className="text-red-500 font-semibold text-xs md:text-sm ">
-              This is a private dashboard, so no public link is available.
-            </span>
-          </div>
-        ) : (
-          <></>
-        )}
-        {!link && backend ? (
-          <div className="mt-2">
-            <span className="text-red-500 font-semibold text-xs md:text-sm ">
-              This is a backend only project, so no public link or image is
-              available.
-            </span>
-          </div>
-        ) : (
-          <></>
-        )}
-      </>
-    );
-  };
-
-  return (
-    <div className="flex flex-col gap-10 md:gap-20 px-4 md:p-0">
-      <div className="flex flex-col justify-center items-center md:flex-row gap-5 md:gap-20">
-        {/* Text content */}
-        <div className="w-full md:w-1/2">
-          <h2 className="font-poppins font-bold text-lg md:text-3xl">{name}</h2>
-          <span className="text-primary font-bold text-sm md:text-base">
-            {company} {year}
-          </span>
-
-          {/* Tags */}
-          <div className="flex gap-2 md:gap-4 mt-2 md:mt-5 flex-wrap">
-            {[...categories, ...techs].map((val, idx) => (
-              <Tag key={`${name}-tag-${idx}`}>{val}</Tag>
-            ))}
-          </div>
-
-          {/* Description */}
-          <p className="text-base md:text-xl mt-2 md:mt-3">{description}</p>
-          <p className="text-gray-700 text-sm md:text-base font-montserrat mt-2">
-            {result}
-          </p>
-
-          {renderLinks()}
-        </div>
-
-        {/* Thumbnail */}
-        <div className="w-full md:w-1/2 flex items-center">
-          <img
-            src={thumbnail}
-            alt={name}
-            className="w-full mx-auto h-auto shadow-primary"
-          />
-        </div>
-      </div>
-
-      {/* Divider */}
-      {showDivider && <ProjectDivider />}
-    </div>
-  );
-};
-
 // 🔹 Main ProjectsListSection
 const ProjectsListSection = () => {
+  const navigate = useNavigate();
+
   const [projects, setProjects] = useState(PORTFOLIOS);
 
   const handleSearch = (searchVal: string) => {
@@ -182,10 +61,13 @@ const ProjectsListSection = () => {
       {/* Project list */}
       <div className="flex flex-col gap-10 md:gap-20">
         {projects.map((project, idx) => (
-          <ProjectCard
+          <ProjectsCardProject
             key={project.name}
             {...project}
             showDivider={idx !== projects.length - 1}
+            onClick={() => {
+              navigate(routes.project.replace(":id", project.id));
+            }}
           />
         ))}
       </div>

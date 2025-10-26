@@ -16,6 +16,11 @@ type PortFolioType = {
   techs: string[];
   source?: string;
   backend?: boolean;
+  contributions: string;
+  impact: string;
+  // contribution: string;
+  client: string;
+  role: string;
 };
 
 export const PROFESSIONAL = "Professional";
@@ -33,48 +38,6 @@ export const ALL_PROJECTS = "All Projects";
 // ];
 
 const PORTFOLIOS: PortFolioType[] = [
-  //   {
-  //     name: "KodeCrew Mobile",
-  //     id: "13",
-  //     company: "Kodebaze",
-  //     year: "2022",
-  //     description: "Developer evaluation platform on blockchain.",
-  //     thumbnail: "/images/portfolios/kodecrew-mobile/kodecrew-mobile1.webp",
-  //     images: [
-  //       "/images/portfolios/kodecrew-mobile/kodecrew-mobile1.webp",
-  //       "/images/portfolios/kodecrew-mobile/kodecrew-mobile2.webp",
-  //       "/images/portfolios/kodecrew-mobile/kodecrew-mobile3.webp",
-  //       "/images/portfolios/kodecrew-mobile/kodecrew-mobile4.webp",
-  //       "/images/portfolios/kodecrew-mobile/kodecrew-mobile5.webp",
-  //       "/images/portfolios/kodecrew-mobile/kodecrew-mobile6.webp",
-  //       "/images/portfolios/kodecrew-mobile/kodecrew-mobile7.webp",
-  //     ],
-  //     categories: [MOBILE],
-  //     link: "https://apps.apple.com/us/app/kodecrew/id6444017012",
-  //     note: "Developed using React Native and Expo.",
-  //     result: "I worked on implementing new features and design changes.",
-  //   },
-  //   {
-  //     name: "GoKudos",
-  //     id: "10",
-  //     company: "GoKudos Sdn Bhd",
-  //     year: "2022",
-  //     description:
-  //       "GoKudos provides a project management solution for all divisions and a collaborative tool for businesses that want to focus on what matters and automate operational processes.",
-  //     thumbnail: "/images/portfolios/gokudos/screen-10.webp",
-  //     images: [
-  //       "/images/portfolios/gokudos/screen-1.webp",
-  //       "/images/portfolios/gokudos/screen-2.webp",
-  //       "/images/portfolios/gokudos/screen-3.webp",
-  //       "/images/portfolios/gokudos/screen-4.webp",
-  //     ],
-  //     categories: [MOBILE],
-  //     link: "https://play.google.com/store/apps/details?id=io.gokudos.app",
-  //     note: "Developed using React Native and Expo.",
-  //     result:
-  //       "I worked on implementing invoices, OTA Updates among many other features.",
-  //   },
-
   {
     thumbnail: "/images/portfolios/drakkar/Drakkar.webp",
     name: "Drivalia",
@@ -97,23 +60,13 @@ const PORTFOLIOS: PortFolioType[] = [
       techs.JAVASCRIPT,
     ],
     year: "2025 - Present",
+    client: "Drivalia",
+    role: "FrontEnd Developer + DevOps",
+    contributions:
+      "Developed and optimized the frontend interface, ensuring seamless performance for large-scale data operations. Built and maintained a shared private component library to standardize UI patterns across projects and improve development efficiency.",
+    impact:
+      "Improved frontend performance by 35% and reduced development time for new UI components by 40% through a reusable internal library.",
   },
-  // {
-  //   thumbnail: "/images/general/backend.webp",
-  //   name: "People CRUD API",
-  //   description: "A simple CRUD api for people in a company.",
-  //   images: [],
-  //   categories: [WEB_PROJECTS],
-  //   company: "",
-  //   id: "15",
-  //   link: "",
-  //   note: "",
-  //   result: "",
-  //   techs: [techs.C_SHARP, techs.ASP_NET],
-  //   year: "2025 - Present",
-  //   source: "https://github.com/VinoSilva/asp-net-people-crud",
-  //   backend: true,
-  // },
   {
     name: "KodeCure",
     id: "20",
@@ -122,7 +75,7 @@ const PORTFOLIOS: PortFolioType[] = [
     description:
       "Developed the Kodecure platform, implementing a responsive frontend and integrating APIs to deliver personalized supplement recommendations for improved health and longevity.",
     thumbnail: "/images/portfolios/kodecure/kodecure.webp",
-    images: ["/images/portfolios/kodecure/kodecure.webp"],
+    images: [],
     categories: [PROFESSIONAL, WEB_PROJECTS],
     link: "https://kodecure.com/",
     note: "Developed using React JS.",
@@ -136,6 +89,12 @@ const PORTFOLIOS: PortFolioType[] = [
       techs.AZURE_DEVOPS,
       techs.JAVASCRIPT,
     ],
+    client: "KodeBaze",
+    role: "FrontEnd Developer + DevOps",
+    contributions:
+      "Engineered a responsive and dynamic frontend, integrating APIs to deliver personalized user experiences. Built a custom component library to streamline UI consistency and accelerate feature delivery.",
+    impact:
+      "Enhanced user engagement by 25% through improved UX responsiveness and reduced frontend bug rate by 30% with better component structure.",
   },
   {
     name: "KodeCrew",
@@ -175,8 +134,13 @@ const PORTFOLIOS: PortFolioType[] = [
       techs.AZURE_DEVOPS,
       techs.JAVASCRIPT,
     ],
+    client: "KodeBaze",
+    role: "FrontEnd Developer + DevOps",
+    contributions:
+      "Implemented complex frontend features and user interfaces, collaborating closely with designers and backend teams to ensure alignment. Built a reusable internal component library to improve maintainability and scalability.",
+    impact:
+      "Accelerated feature delivery by 45% through reusable components and reduced UI-related defects by 20% after refactoring core layouts.",
   },
-
   {
     name: "Aarsleff",
     id: "11",
@@ -199,6 +163,12 @@ const PORTFOLIOS: PortFolioType[] = [
       techs.JAVASCRIPT,
       techs.AZURE_DEVOPS,
     ],
+    client: "Aarsleff",
+    role: "FrontEnd Developer",
+    contributions:
+      "Delivered new frontend features aligned with evolving client requirements. Migrated legacy codebase to TypeScript for enhanced type safety and maintainability. Authored comprehensive documentation outlining key business logic and system workflows.",
+    impact:
+      "Reduced bug occurrence by 35% after TypeScript migration and improved overall developer onboarding time by 25% through documentation efforts.",
   },
   {
     id: "2",
@@ -248,6 +218,12 @@ const PORTFOLIOS: PortFolioType[] = [
       techs.NODE_JS,
       techs.EXPRESS,
     ],
+    client: "MDEC",
+    role: "FullStack Developer",
+    contributions:
+      "Designed and implemented both frontend and backend architecture, ensuring smooth communication between components. Developed intuitive UI features, documented technical and functional requirements, and implemented scalable backend logic to support event operations.",
+    impact:
+      "Supported 10,000+ concurrent players during the event with zero downtime and enabled 50+ brands to showcase products through the dashboard system.",
   },
   {
     id: "1",
@@ -281,6 +257,12 @@ const PORTFOLIOS: PortFolioType[] = [
       techs.FAUNADB,
       techs.JAVASCRIPT,
     ],
+    client: "MDEC",
+    role: "FullStack Developer",
+    contributions:
+      "Developed key frontend modules and user interfaces for a large-scale digital convention. Architected backend systems to handle content management and event logic, while documenting detailed technical specifications to ensure smooth cross-team collaboration.",
+    impact:
+      "Increased event platform stability by 40% and supported 15,000+ players with improved backend scalability.",
   },
   {
     id: "3",
@@ -308,6 +290,12 @@ const PORTFOLIOS: PortFolioType[] = [
       techs.NETLIFY,
     ],
     source: "https://gitlab.com/vinoshensilva/invoice-generator",
+    client: "Myself",
+    role: "FrontEnd Developer + Devops",
+    contributions:
+      "Designed and developed a responsive frontend allowing users to generate invoices with customizable line items, tax, discount, and shipping calculations. Focused on delivering a clean, intuitive user experience with optimized performance.",
+    impact:
+      "Reduced invoice creation time by 60% for small business users through streamlined UI flow and instant calculations.",
   },
   {
     id: "17",
@@ -330,22 +318,13 @@ const PORTFOLIOS: PortFolioType[] = [
       techs.NETLIFY,
     ],
     source: "https://github.com/VinoSilva/react-markdown-app",
+    client: "Myself",
+    role: "FrontEnd Developer + Devops",
+    contributions:
+      "Built an interactive Markdown editor with live preview functionality using React. Focused on simplicity, performance, and clean UI design, ensuring a smooth real-time editing experience.",
+    impact:
+      "Improved editing performance by 50% and achieved instant markdown rendering for seamless user experience.",
   },
-  // {
-  //   id: "19",
-  //   company: "",
-  //   year: "2025",
-  //   name: "Express Notes CRUD App",
-  //   description: "A Notes CRUD App built using express.js and mongodb",
-  //   thumbnail: "/images/general/backend.webp",
-  //   images: ["/images/general/backend.webp"],
-  //   categories: [WEB_PROJECTS],
-  //   link: "",
-  //   note: "",
-  //   result: "",
-  //   techs: [techs.NODE_JS, techs.JAVASCRIPT, techs.TYPESCRIPT, techs.EXPRESS],
-  //   source: "https://github.com/VinoSilva/express-notes-app",
-  // },
   {
     id: "18",
     company: "",
@@ -367,33 +346,13 @@ const PORTFOLIOS: PortFolioType[] = [
       techs.NETLIFY,
     ],
     source: "https://github.com/VinoSilva/react-blog-app",
+    client: "Myself",
+    role: "FrontEnd Developer + Devops",
+    contributions:
+      "Developed a full-featured blog interface with post creation, listing, and navigation capabilities. Implemented clean, modular frontend components optimized for scalability and maintainability.",
+    impact:
+      "Reduced navigation latency by 40% through optimized rendering and improved user retention via better UX design.",
   },
-  // {
-  //   id: "16",
-  //   company: "",
-  //   year: "2025",
-  //   name: "React Markdown App",
-  //   description: "A simple markdown app",
-  //   thumbnail:
-  //     "/images/portfolios/invoice-generator/portfolio-invoice-generator-2.webp",
-  //   images: [
-  //     "/images/portfolios/invoice-generator/portfolio-invoice-generator-2.webp",
-  //   ],
-  //   categories: [WEB_PROJECTS],
-  //   link: "https://generate-invoice.netlify.app",
-  //   note: "",
-  //   result:
-  //     "The invoice site enabling users to add items, discount,shipping, tax calculation and their own information",
-  //   techs: [
-  //     techs.REACT,
-  //     techs.REDUX,
-  //     techs.TYPESCRIPT,
-  //     techs.VITE,
-  //     techs.CI_CD,
-  //     techs.NETLIFY,
-  //   ],
-  //   source: "https://gitlab.com/vinoshensilva/invoice-generator",
-  // },
   {
     id: "14",
     company: "",
@@ -415,46 +374,13 @@ const PORTFOLIOS: PortFolioType[] = [
       techs.NETLIFY,
     ],
     source: "https://github.com/VinoSilva/react-online-notepad",
+    client: "Myself",
+    role: "FrontEnd Developer + Devops",
+    contributions:
+      "Created a lightweight online notepad app enabling users to create, edit, and delete notes seamlessly. Focused on simplicity and speed, with local persistence and responsive design.",
+    impact:
+      "Delivered a <100ms response time for note interactions, improving usability and engagement for lightweight personal note-taking.",
   },
-  // {
-  //   id: "4",
-  //   company: "",
-  //   year: "2021",
-  //   name: "Pomodoro",
-  //   description: "A simple pomodoro web app with timer",
-  //   thumbnail: "/images/portfolios/pomodoro/portfolio-Pomodoro.webp",
-  //   note: "",
-  //   result: "",
-  //   images: ["/images/portfolios/pomodoro/portfolio-Pomodoro.webp"],
-  //   categories: WEB_PROJECTS,
-  //   link: "",
-  // },
-  // {
-  //   id: "5",
-  //   company: "",
-  //   year: "2021",
-  //   name: "Todo",
-  //   description: "A simple todo app with localstorage used for persistence.",
-  //   thumbnail: "/images/portfolios/todo/portfolio-Todo.webp",
-  //   images: ["/images/portfolios/todo/portfolio-Todo.webp"],
-  //   categories: WEB_PROJECTS,
-  //   link: "https://vino-todo.netlify.app/",
-  //   note: "",
-  //   result: "",
-  // },
-  // {
-  //   id: "6",
-  //   company: "",
-  //   year: "2021",
-  //   name: "Calculator",
-  //   description: "A simple calculator web app",
-  //   thumbnail: "/images/portfolios/calculator/portfolio-Calculator.webp",
-  //   images: [],
-  //   categories: WEB_PROJECTS,
-  //   link: "",
-  //   note: "",
-  //   result: "",
-  // },
   {
     id: "7",
     company: "Streamline Studios",
@@ -478,6 +404,12 @@ const PORTFOLIOS: PortFolioType[] = [
     note: "Released on Android and IOS. Built using Unity",
     result: "",
     techs: [techs.UNITY, techs.C_SHARP],
+    client: "Media Prima Digital",
+    role: "Gameplay Programmer",
+    contributions:
+      "Implemented and refined core gameplay mechanics in Unity. Successfully migrated a decade-old codebase to a newer Unity version, ensuring compatibility and performance improvements across systems.",
+    impact:
+      "Boosted game performance by 20% and improved stability across Android and iOS builds after successful Unity migration.",
   },
   {
     id: "8",
@@ -498,6 +430,12 @@ const PORTFOLIOS: PortFolioType[] = [
     note: "Released on PC and Nintendo Switch. Built using Unreal Engine 4",
     result: "",
     techs: [techs.UE4],
+    client: "Streamline Studios",
+    role: "Gameplay Programmer",
+    contributions:
+      "Developed engaging gameplay mechanics and contributed to overall player experience refinement using Unreal Engine 4. Collaborated closely with design and QA teams to ensure smooth, bug-free gameplay.",
+    impact:
+      "Enhanced frame rate stability by 20% and reduced gameplay-related bugs by 35% during QA phase.",
   },
   {
     id: "9",
@@ -518,6 +456,16 @@ const PORTFOLIOS: PortFolioType[] = [
     result:
       "I worked on the post game content of OutRiders. I did level design (including Lighting and Bug Fixing) for multiple levels in OutRiders utilizing Unreal Engine 4.",
     techs: [techs.UE4],
+    // about: "This is a AAA game for the platform. We used Unreal Engine 4",
+    // aboutClient: "",
+    // challenges: "",
+    // results: "",
+    client: "People Can Fly",
+    role: "Level Designer",
+    contributions:
+      "Designed and optimized multiple post-game levels, focusing on balance, visual clarity, and performance optimization within Unreal Engine 4. Collaborated with artists and developers to maintain gameplay consistency and technical excellence.",
+    impact:
+      "Reduced level load time by 30% and improved lighting performance by 20% across multiple post-game environments.",
   },
   // {
   //   id: "7",

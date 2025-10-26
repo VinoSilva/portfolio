@@ -62,7 +62,7 @@ const Navbar = () => {
         </div>
       </nav>
       {showDropdown ? (
-        <div className="flex md:hidden w-full items-center h-screen fixed top-0 flex-col gap-4 bg-white p-4 shadow-primary">
+        <div className="flex md:hidden w-full items-center h-screen fixed top-0 flex-col gap-4 bg-white p-4 shadow-primary border-t-primary border-t-[1px]">
           <button
             onClick={() => {
               setShowDropdown(false);
