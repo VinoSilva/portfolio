@@ -8,7 +8,7 @@ const IconButton = ({
     <button
       {...props}
       className={twMerge([
-        "cursor-pointer bg-primary text-white rounded-full border-[1px] border-primary",
+        "cursor-pointer bg-primary p-2 text-white rounded-full border-[1px] border-primary",
         className,
       ])}
     />

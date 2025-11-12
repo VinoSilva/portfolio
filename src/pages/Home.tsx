@@ -3,6 +3,7 @@
 import ExperiencesSection from "@components/Home/ExperiencesSection";
 import Hero from "@components/Home/Hero";
 import ProjectsSection from "@components/Home/ProjectsSection";
+// import TestimonialSection from "@components/Home/TestimonialSection";
 import SkillsSection from "@components/Home/SkillsSection";
 import StorySection from "@components/Home/StorySection";
 
@@ -14,6 +15,7 @@ const Home = () => {
       <ExperiencesSection />
       <SkillsSection />
       {/* <CertificatesSection /> */}
+      {/* <TestimonialSection /> */}
       <StorySection />
     </div>
   );
