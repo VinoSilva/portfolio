@@ -96,10 +96,10 @@ export const skills: {
       //   name: "Jenkins",
       //   img_src: "/images/techs/DevOps/tech-jenkins.webp",
       // },
-      // {
-      //   name: "Bash Script",
-      //   img_src: "/images/techs/DevOps/tech-bash.webp",
-      // },
+      {
+        name: "Bash Script",
+        img_src: "/images/techs/DevOps/tech-bash.webp",
+      },
     ],
   },
 ];
