@@ -17,7 +17,8 @@ const SkillsSection = () => {
                     return (
                       <div
                         key={name}
-                        className="flex items-center gap-6 shadow-primary border-t-primary border-t-[1px] p-4 rounded-2xl"
+                        // shadow-primary border-t-primary border-t-[1px]
+                        className="flex items-center gap-6 border-[1px] border-primary p-4 rounded-2xl"
                       >
                         <img
                           src={img_src}

@@ -27,43 +27,43 @@ export const skills: {
       },
     ],
   },
-  {
-    name: "Backend",
-    techs: [
-      {
-        name: "Postgresql",
-        img_src: "/images/techs/BackEnd/postgresql.webp",
-      },
-      {
-        name: "ASP.Net",
-        img_src: "/images/techs/BackEnd/tech-asp-net.webp",
-      },
-      {
-        name: "Node JS",
-        img_src: "/images/techs/BackEnd/tech-node-js.webp",
-      },
-      // {
-      //   name: "Nest JS",
-      //   img_src: "/images/techs/BackEnd/tech-nest-js.webp",
-      // },
-      // {
-      //   name: "GraphQL",
-      //   img_src: "/images/techs/BackEnd/tech-graphql.webp",
-      // },
-      // {
-      //   name: "Golang",
-      //   img_src: "/images/techs/BackEnd/tech-golang.webp",
-      // },
-      // {
-      //   name: "Redis",
-      //   img_src: "/images/techs/BackEnd/tech-redis.webp",
-      // },
-      // {
-      //   name: "MongoDB",
-      //   img_src: "/images/techs/BackEnd/tech-mongodb.webp",
-      // },
-    ],
-  },
+  // {
+  //   name: "Backend",
+  //   techs: [
+  //     {
+  //       name: "Postgresql",
+  //       img_src: "/images/techs/BackEnd/postgresql.webp",
+  //     },
+  //     {
+  //       name: "ASP.Net",
+  //       img_src: "/images/techs/BackEnd/tech-asp-net.webp",
+  //     },
+  //     {
+  //       name: "Node JS",
+  //       img_src: "/images/techs/BackEnd/tech-node-js.webp",
+  //     },
+  //     {
+  //       name: "Nest JS",
+  //       img_src: "/images/techs/BackEnd/tech-nest-js.webp",
+  //     },
+  //     {
+  //       name: "GraphQL",
+  //       img_src: "/images/techs/BackEnd/tech-graphql.webp",
+  //     },
+  //     {
+  //       name: "Golang",
+  //       img_src: "/images/techs/BackEnd/tech-golang.webp",
+  //     },
+  //     {
+  //       name: "Redis",
+  //       img_src: "/images/techs/BackEnd/tech-redis.webp",
+  //     },
+  //     {
+  //       name: "MongoDB",
+  //       img_src: "/images/techs/BackEnd/tech-mongodb.webp",
+  //     },
+  //   ],
+  // },
   // {
   //   name: "Mobile",
   //   techs: [
@@ -100,6 +100,14 @@ export const skills: {
         name: "Bash Script",
         img_src: "/images/techs/DevOps/tech-bash.webp",
       },
+      {
+        name: "Linux",
+        img_src: "/images/techs/DevOps/tech-linux.webp",
+      },
+      // {
+      //   name: "Prometheus",
+      //   img_src: "/images/techs/DevOps/tech-prometheus.webp",
+      // },
     ],
   },
 ];

@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
       </div>
       <div className=" flex flex-col items-center justify-center p-5 pt-0">
-        <h5 className="font-poppins font-semibold">Vinoshen Silva</h5>
+        <h5 className="font-poppins font-semibold">Vino Silva</h5>
         <p className="font-montserrat font-semibold text-xs">
           Turning coffee into the beautiful poetry called code since{" "}
           <span className="text-primary">2017</span>

@@ -51,15 +51,15 @@ const Hero = () => {
         </div>
       </div>
       <div className="font-poppins w-full sm:w-2/3">
-        <p className="text-xl">Hey I'm Vinoshen Silva</p>
+        <p className="text-xl">Hey I'm Vino Silva</p>
         <div className="text-4xl md:text-7xl font-extrabold">
           <h2>
-            <span className="text-primary">Full</span>Stack
+            <span className="text-primary">Senior</span> Front End
           </h2>
-          <h2>Developer</h2>
+          <h2>Engineer</h2>
         </div>
         <div className="font-montserrat mt-4">
-          I’m a full stack developer specializing in building robust, scalable
+          I’m a senior front end engineer specializing in building robust, scalable
           applications — crafting seamless user experiences backed by efficient,
           secure, and reliable server logic.
         </div>
