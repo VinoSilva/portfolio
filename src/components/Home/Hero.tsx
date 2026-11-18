@@ -54,14 +54,16 @@ const Hero = () => {
         <p className="text-xl">Hey I'm Vino Silva</p>
         <div className="text-4xl md:text-7xl font-extrabold">
           <h2>
-            <span className="text-primary">Senior</span> Front End
+            <span className="text-primary">Principal</span> Full Stack
           </h2>
           <h2>Engineer</h2>
         </div>
         <div className="font-montserrat mt-4">
-          I’m a senior front end engineer specializing in building robust, scalable
-          applications — crafting seamless user experiences backed by efficient,
-          secure, and reliable server logic.
+          I’m a principal full stack engineer with 6+ years of experience
+          designing and delivering web applications end to end — leading
+          architecture across React and TypeScript front ends, ASP.NET Core and
+          Node.js services, and PostgreSQL databases, with automated CI/CD on
+          Azure DevOps.
         </div>
         <div className="mt-4 flex gap-4 flex-wrap">
           <Link to={routes.contact}>
@@ -73,7 +75,7 @@ const Hero = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="/resume/vino-resume-2025.pdf"
+            href="/resume/vino-resume-2026.pdf"
           >
             <Button variant="secondary">Resume</Button>
           </a>

@@ -20,11 +20,13 @@ const SkillsSection = () => {
                         // shadow-primary border-t-primary border-t-[1px]
                         className="flex items-center gap-6 border-[1px] border-primary p-4 rounded-2xl"
                       >
-                        <img
-                          src={img_src}
-                          className="w-10 h-10 rounded-full"
-                          alt={`tech-${name}`}
-                        />
+                        {img_src && (
+                          <img
+                            src={img_src}
+                            className="w-10 h-10 rounded-full"
+                            alt={`tech-${name}`}
+                          />
+                        )}
                         <p className="font-semibold font-montserrat">{name}</p>
                       </div>
                     );

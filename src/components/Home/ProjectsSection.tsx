@@ -22,7 +22,7 @@ const portfolios: ProjectCardProps[] = [
     imgSrc: "/images/portfolios/drakkar/Drakkar.webp",
     name: "Drivalia",
     description:
-      "Built a vehicle management platform for Drivalia, enabling streamlined handling of quotations, fleet equipment, and overall vehicle operations.",
+      "Leading several projects within Drivalia's fleet and vehicle management platform, which streamlines quotations, fleet equipment, and overall vehicle operations.",
     id: "13",
   },
   {

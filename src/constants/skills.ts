@@ -1,14 +1,11 @@
 export const skills: {
   name: string;
-  techs: { name: string; img_src: string }[];
+  techs: { name: string; img_src?: string }[];
 }[] = [
   {
-    name: "Frontend",
+    name: "Languages",
     techs: [
-      {
-        name: "React",
-        img_src: "/images/techs/FrontEnd/tech-react.webp",
-      },
+      { name: "C#" },
       {
         name: "Javascript",
         img_src: "/images/techs/FrontEnd/tech-javascript.webp",
@@ -17,97 +14,98 @@ export const skills: {
         name: "Typescript",
         img_src: "/images/techs/FrontEnd/tech-typescript.webp",
       },
-      {
-        name: "Redux",
-        img_src: "/images/techs/FrontEnd/tech-redux.webp",
-      },
-      {
-        name: "Vite",
-        img_src: "/images/techs/FrontEnd/tech-vite.webp",
-      },
+      { name: "SQL" },
+      { name: "HTML" },
+      { name: "CSS" },
     ],
   },
-  // {
-  //   name: "Backend",
-  //   techs: [
-  //     {
-  //       name: "Postgresql",
-  //       img_src: "/images/techs/BackEnd/postgresql.webp",
-  //     },
-  //     {
-  //       name: "ASP.Net",
-  //       img_src: "/images/techs/BackEnd/tech-asp-net.webp",
-  //     },
-  //     {
-  //       name: "Node JS",
-  //       img_src: "/images/techs/BackEnd/tech-node-js.webp",
-  //     },
-  //     {
-  //       name: "Nest JS",
-  //       img_src: "/images/techs/BackEnd/tech-nest-js.webp",
-  //     },
-  //     {
-  //       name: "GraphQL",
-  //       img_src: "/images/techs/BackEnd/tech-graphql.webp",
-  //     },
-  //     {
-  //       name: "Golang",
-  //       img_src: "/images/techs/BackEnd/tech-golang.webp",
-  //     },
-  //     {
-  //       name: "Redis",
-  //       img_src: "/images/techs/BackEnd/tech-redis.webp",
-  //     },
-  //     {
-  //       name: "MongoDB",
-  //       img_src: "/images/techs/BackEnd/tech-mongodb.webp",
-  //     },
-  //   ],
-  // },
-  // {
-  //   name: "Mobile",
-  //   techs: [
-  //     {
-  //       name: "React Native",
-  //       img_src: "/images/techs/Mobile/tech-react-native.webp",
-  //     },
-  //     {
-  //       name: "Expo",
-  //       img_src: "/images/techs/Mobile/tech-expo.webp",
-  //     },
-  //   ],
-  // },
   {
-    name: "Devops",
+    name: "Frontend",
+    techs: [
+      { name: "React", img_src: "/images/techs/FrontEnd/tech-react.webp" },
+      {
+        name: "Redux / Redux Toolkit",
+        img_src: "/images/techs/FrontEnd/tech-redux.webp",
+      },
+      { name: "Responsive Design" },
+      { name: "Component Libraries" },
+    ],
+  },
+  {
+    name: "Backend",
+    techs: [
+      {
+        name: "ASP.NET Core",
+        img_src: "/images/techs/BackEnd/tech-asp-net.webp",
+      },
+      { name: "ASP.NET Core Web API" },
+      { name: ".NET" },
+      { name: "Node JS", img_src: "/images/techs/BackEnd/tech-node-js.webp" },
+      { name: "Express.js" },
+      { name: "REST APIs" },
+      { name: "Microservices" },
+      { name: "Background Jobs" },
+      { name: "Serverless" },
+    ],
+  },
+  {
+    name: "Databases & ORMs",
+    techs: [
+      { name: "PostgreSQL", img_src: "/images/techs/BackEnd/postgresql.webp" },
+      { name: "Entity Framework Core" },
+      { name: "Prisma" },
+      { name: "Sequelize" },
+      { name: "TypeORM" },
+      { name: "FaunaDB" },
+      { name: "Query Optimization" },
+    ],
+  },
+  {
+    name: "Security & Auth",
+    techs: [
+      { name: "Microsoft Entra ID (Azure AD)" },
+      { name: "OAuth 2.0" },
+      { name: "JWT" },
+      { name: "Role-Based Access Control (RBAC)" },
+    ],
+  },
+  {
+    name: "Cloud & DevOps",
     techs: [
       {
         name: "Azure Devops",
         img_src: "/images/techs/DevOps/tech-azure-devops.webp",
       },
-      // {
-      //   name: "Kubernetes",
-      //   img_src: "/images/techs/DevOps/tech-kubernetes.webp",
-      // },
-      {
-        name: "Docker",
-        img_src: "/images/techs/DevOps/tech-docker.webp",
-      },
-      // {
-      //   name: "Jenkins",
-      //   img_src: "/images/techs/DevOps/tech-jenkins.webp",
-      // },
-      {
-        name: "Bash Script",
-        img_src: "/images/techs/DevOps/tech-bash.webp",
-      },
-      {
-        name: "Linux",
-        img_src: "/images/techs/DevOps/tech-linux.webp",
-      },
-      // {
-      //   name: "Prometheus",
-      //   img_src: "/images/techs/DevOps/tech-prometheus.webp",
-      // },
+      { name: "Azure Pipelines" },
+      { name: "Azure Artifacts" },
+      { name: "CI/CD" },
+      { name: "Git" },
+      { name: "GitHub" },
     ],
+  },
+  {
+    name: "Practices & Tools",
+    techs: [
+      { name: "System Design" },
+      { name: "Software Architecture" },
+      { name: "Code Review" },
+      { name: "Unit Testing" },
+      { name: "AI-Assisted Development (Claude)" },
+    ],
+  },
+  {
+    name: "Soft Skills",
+    techs: [
+      { name: "Technical Leadership" },
+      { name: "Technical Roadmapping" },
+      { name: "Mentoring" },
+      { name: "Stakeholder Management" },
+      { name: "Collaboration" },
+      { name: "Communication" },
+    ],
+  },
+  {
+    name: "Spoken Languages",
+    techs: [{ name: "English (Fluent)" }, { name: "Malay (Fluent)" }],
   },
 ];
